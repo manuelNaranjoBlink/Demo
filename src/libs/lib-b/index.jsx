@@ -1,10 +1,11 @@
-import React from "react";
+import CustomText from "./components/CustomText";
+import Button from "./components/Button";
+import AppBar from "./components/AppBar";
 import libA from "../lib-a/index.jsx";
-import InputNumber from "./components/InputNumber/index.jsx";
-import Button from "./components/Button/index.jsx";
-
 export default {
     ...libA,
     Button: Button,
-    InputNumber: InputNumber
+    CustomText: CustomText,
+    AppBar: AppBar
 }
+

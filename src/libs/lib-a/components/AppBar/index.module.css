@@ -1,0 +1,21 @@
+.ButtonCustomStyle {
+    height: 100%;
+    background-color: unset;
+    border: unset;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.ButtonCustomStyle:hover {
+    color: rgb(58, 198, 42);
+    background-color: white;
+}
+
+.appBar {
+    width: 90%;
+    display: flex;
+    place-content: space-between;
+    height: 50px;
+    background-color: rgb(58, 198, 42);
+}

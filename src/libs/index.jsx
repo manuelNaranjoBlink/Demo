@@ -2,10 +2,10 @@ import libA from "@/libs/lib-a";
 import libB from "@/libs/lib-b";
 
 const param =
-    // "libA"
-    "libB"
+    "libA"
+    // "libB"
 
-export default class LibraryComponents {
+export default class ComponentsLibrary {
     constructor() {
         switch (param) {
             case "libA":
@@ -15,14 +15,14 @@ export default class LibraryComponents {
                 this.actualLib = libB;
                 break;
             default:
-                this.actualLib = libA;
+                this.actualLib = libB;
                 break;
         }
     }
 
     static getInstance() {
         if (!this.instance) {
-            this.instance = new LibraryComponents();
+            this.instance = new ComponentsLibrary();
         }
         return this.instance.actualLib;
     }

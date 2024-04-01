@@ -1,11 +1,10 @@
 import React from "react";
 
-export default ({ children, className, onClick, disabled, startIcon, endIcon }) => {
+export default ({ item, className, onClick, disabled }) => {
+
     return (
         <button disabled={disabled} className={className} onClick={onClick}>
-            {startIcon}
-            {children}
-            {endIcon}
+            {item.text}
         </button>
     )
 };

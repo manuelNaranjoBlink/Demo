@@ -2,7 +2,7 @@ import libA from "@/libs/lib-a";
 import libB from "@/libs/lib-b";
 
 const param =
-    //"libA"
+    // "libA"
      "libB"
 
 export default class ComponentsLibrary {

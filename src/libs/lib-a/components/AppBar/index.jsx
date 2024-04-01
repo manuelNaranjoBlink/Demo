@@ -12,7 +12,7 @@ const SettingsIcon = <svg height="20px" viewBox="0 0 24 24" fill="none" xmlns="h
 
 
 const menuItems = [[
-    { text: "Home", icon: HomeIcon },
+    { text: "Home", icon: HomeIcon, action: () => { alert('Home') } },
     { text: "About Us", icon: AboutIcon },
     { text: "Free Trial", icon: FreeTrialIcon },
     { text: "Contact", icon: ContactIcon }
@@ -27,7 +27,15 @@ export default (props) => {
         <nav className={style.appBar} >
             {menuItems.map((menuItem) =>
                 <ul style={{ display: "flex", listStyle: "none", flexFlow: "wrap", gap: "10px 10px" }}>
-                    {menuItem.map((item) => <li><libA.Button className={style.ButtonCustomStyle} onClick={() => alert(item.text)} item={item} startIcon={item.icon}/></li>)}
+                    {menuItem.map((item) => 
+                        <li>
+                            <libA.Button
+                                className={style.ButtonCustomStyle}
+                                onClick={item?.action}
+                                item={item}
+                                startIcon={item.icon}
+                            />
+                    </li>)}
                 </ul>
             )}
         </nav>

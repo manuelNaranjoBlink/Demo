@@ -5,6 +5,10 @@
     color: white;
     padding: 15px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
 }
 
 .ButtonCustomStyle:hover {

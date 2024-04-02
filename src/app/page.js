@@ -7,7 +7,7 @@ export default () => {
   return (
     <main className={styles.main} >
       <ComponentsLibrary.AppBar />
-      <Link href={"/prueba"} style={{ marginTop: "32px" }}>Prueba</Link>
+      <Link href={"/vistaContent"} style={{ marginTop: "32px" }}>Vista Content</Link>
     </main>
   );
 }

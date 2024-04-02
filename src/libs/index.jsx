@@ -1,21 +1,24 @@
-export const param =
-    "libA"
-    // "libB"
+import { Param } from "@/utils";
 
-let actualLib;
+export default class ComponentsLibrary {
+    constructor() {
+        switch (Param) {
+            case "DominioA":
+                this.actualLib = require("@/libs/lib-a");
+                break;
+            case "DominioB":
+                this.actualLib = require("@/libs/lib-b");
+                break;
+            default:
+                this.actualLib = require("@/libs/lib-a");
+                break;
+        }
+    }
 
-console.log("Llamada a la libreria")
-
-switch (param) {
-    case "libA":
-        actualLib = require("@/libs/lib-a");
-        break;
-    case "libB":
-        actualLib = require("@/libs/lib-b");
-        break;
-    default:
-        actualLib = require("@/libs/lib-a");
-        break;
+    static getInstance() {
+        if (!this.instance) {
+            this.instance = new ComponentsLibrary();
+        }
+        return this.instance.actualLib.default;
+    }
 }
-
-export default actualLib.default;

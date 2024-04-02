@@ -1,18 +1,19 @@
 'use client'
 import React from "react";
-import useLogic from "../../../../useLogic/ButtonLogic/useDefault";
+import LogicLibrary from "@/useLogic/ButtonLogic/index";
 
 export default ({ item, className, onClick, disabled, startIcon }) => {
+    const useLogic = LogicLibrary.getInstance()
     const { performDefaultAction } = useLogic();
 
-	const handleClick = () => {
+    const handleClick = () => {
         console.log(onClick)
-		if (onClick) {
-			onClick();
-		} else {
-			performDefaultAction();
-		}
-	};
+        if (onClick) {
+            onClick();
+        } else {
+            performDefaultAction();
+        }
+    };
 
     return (
         <button

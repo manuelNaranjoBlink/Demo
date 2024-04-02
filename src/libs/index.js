@@ -1,8 +1,8 @@
-import { Param } from "@/utils";
+import { param } from "@/utils";
 
 export default class ComponentsLibrary {
     constructor() {
-        switch (Param) {
+        switch (param) {
             case "DominioA":
                 this.actualLib = require("@/libs/lib-a");
                 break;

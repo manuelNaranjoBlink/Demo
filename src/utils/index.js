@@ -1,3 +1,3 @@
-export const Param =
+export const param =
     "DominioA"
     // "DominioB"

@@ -1,12 +1,14 @@
 import CustomText from "./components/CustomText";
 import Button from "./components/Button";
 import AppBar from "./components/AppBar";
-import DominioA from "../lib-a/index.jsx";
+import libA from "../lib-a/index.jsx";
+import { ViewContent } from "./components/ViewContent";
 
 export default {
-    // ...DominioA,
-    PersonalizedSpan: DominioA.PersonalizedSpan,
+    // ...libA,
+    PersonalizedSpan: libA.PersonalizedSpan,
     Button: Button,
     AppBar: AppBar,
-    CustomText: CustomText
+    CustomText: CustomText,
+    ViewContent: ViewContent
 }

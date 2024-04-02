@@ -1,9 +1,10 @@
 'use client'
 import React from "react";
-import LogicLibrary from "@/useLogic/ButtonLogic/index";
+import useLogic from "@/useLogic/ButtonLogic/useDefault";
+// Al importar la lógica en el componente podemos lograr que componentes similares tengan diferentes lógicas 
+// pero no se estaría importando dinámicamente, habría que seleccionar para cada componente la lógica deseada.
 
 export default ({ item, className, onClick, disabled, startIcon }) => {
-    const useLogic = LogicLibrary.getInstance()
     const { performDefaultAction } = useLogic();
 
     const handleClick = () => {

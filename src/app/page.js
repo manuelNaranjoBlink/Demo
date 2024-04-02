@@ -1,13 +1,13 @@
+import Link from "next/link";
 import styles from "./page.module.css";
-import ActualComponentsLibrary from "@/libs/index";
+import ComponentsLibrary from "@/libs/index";
 
 export default () => {
-
-  const ComponentsLibrary = ActualComponentsLibrary.getInstance();
 
   return (
     <main className={styles.main} >
       <ComponentsLibrary.AppBar />
+      <Link href={"/prueba"} style={{ marginTop: "32px" }}>Prueba</Link>
     </main>
   );
 }

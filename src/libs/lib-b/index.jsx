@@ -4,7 +4,8 @@ import AppBar from "./components/AppBar";
 import libA from "../lib-a/index.jsx";
 
 export default {
-    ...libA,
+    // ...libA,
+    PersonalizedSpan: libA.PersonalizedSpan,
     Button: Button,
     AppBar: AppBar,
     CustomText: CustomText

@@ -5,5 +5,8 @@ import AppBar from "./components/AppBar";
 export default {
     Button: Button,
     AppBar: AppBar,
-    InputNumber: InputNumber
+    InputNumber: InputNumber,
+    PersonalizedSpan: () => {
+        return <span>Personalized Span</span>
+    }
 }

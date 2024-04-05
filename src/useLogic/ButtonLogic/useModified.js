@@ -4,7 +4,7 @@ import { useState } from 'react';
 const useLogic = () => {
 	const actionToDefaultAction = () => {
 		// window.open("https://www.google.com", "_blank");
-        alert("onClic MODIFICADO");
+        alert("useLogic modified onClic");
 	}
 
 	const [defaultAction, setDefaultAction] = useState(() => actionToDefaultAction);

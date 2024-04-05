@@ -1,0 +1,54 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 32px;
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonCustomStyle {
+    height: 100%;
+    background-color: unset;
+    border: unset;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+
+.buttonCustomStyle:hover {
+    color: rgb(198, 187, 42);
+    background-color: white;
+}
+
+.appBar {
+    width: 90%;
+    display: flex;
+    place-content: space-between;
+    height: 50px;
+    background-color: rgb(198, 187, 42);
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    flex-flow: wrap;
+    gap: 10px 10px;
+}
+
+.title {
+    color: rgb(198, 187, 42);
+    margin: 20px 0;
+}

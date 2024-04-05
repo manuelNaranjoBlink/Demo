@@ -1,16 +1,21 @@
-import Link from "next/link";
-import styles from "./page.module.css";
-import ComponentsLibrary from "@/libs";
+import { DomainProvider } from "@/contexts/DomainProvider";
+import { LibraryProvider } from "@/contexts/LibrariesProvider";
+import dynamic from "next/dynamic";
 
-export default () => {
+export default async () => {
 
-  let actualLibrary = ComponentsLibrary.getInstance();
-  const {AppBar}=actualLibrary
+  const res = await fetch('http://demo7540337.mockable.io/saopaulo');
+  const domain = await (res.json())
+  const domainToLoad = domain.filter(module => module.active)[0]?.domain;
+  const Component = dynamic(() => import(`./domain/${domainToLoad}`, { ssr: false }))
 
   return (
-    <main className={styles.main} >
-      <AppBar />
-      <Link href={"/vistaContent"} style={{ marginTop: "32px" }}>Vista Content</Link>
+    <main className="">
+      <DomainProvider domain={domainToLoad}>
+        <LibraryProvider>
+          <Component />
+        </LibraryProvider>
+      </DomainProvider>
     </main>
   );
 }

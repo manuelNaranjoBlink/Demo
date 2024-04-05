@@ -1,10 +1,14 @@
-import Link from 'next/link'
-import { ViewContent } from "../components/ViewContent";
+import Link from 'next/link';
+import { CLDIR, THEMEDIR } from "../domain.config";
 
-export default () => {
+export default async () => {
+
+  let actualLibrary = (await import("@/libs/" + CLDIR)).default;
+  let styles = (await import("@/themes/" + THEMEDIR)).default;
+  const { ViewContent } = actualLibrary
 
   return (
-    <div style={{ padding: "32px", width: "100wh", height: "100vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div className={styles.viewContent.container}>
       <Link href="/">Home</Link>
       <ViewContent />
     </div>

@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import libA from "../../";
+import { LibrariesContext } from "@/contexts/LibrariesProvider";
 
-export default ViewContent = async () => {
+export default () => {
 
-    // const app = "DominioA"
-    // const THEMEDIR = (await import(`@/app/domain/${app}/domain.config`)).THEMEDIR;
-    // let styles = (await import("@/themes/" + THEMEDIR)).default;
+    const { styles } = useContext(LibrariesContext);
     const { InputNumber, PersonalizedSpan, Button } = libA
 
     return (

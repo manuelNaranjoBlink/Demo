@@ -1,22 +1,18 @@
-// import React from "react";
-// import libB from "../..";
-// import SelectByDom from "@/utils/selectByDom";
+import React, { useContext } from "react";
+import componentsLibrary from "../..";
+import { LibrariesContext } from "@/contexts/LibrariesProvider";
 
-// export const ViewContent = async() => {
+export const ViewContent = async() => {
 
-//     const app = "DominioA"
-//     const THEMEDIR = (await import(`@/app/domain/${app}/domain.config`)).THEMEDIR;
-//     let styles = (await import("@/themes/" + THEMEDIR)).default;
+    const { styles } = useContext(LibrariesContext);
+    const { CustomText, PersonalizedSpan, Button } = componentsLibrary
 
-//     // let styles = SelectByDom.getTheme();
-//     const { CustomText, PersonalizedSpan, Button } = libB
-
-//     return (
-//         <div className={styles.viewContent.container}>
-//             <h2 className={styles.viewContent.title} >View Content</h2>
-//             <PersonalizedSpan />
-//             <Button item={({ text: "Button" })} />
-//             <CustomText />
-//         </div>
-//     )
-// }
+    return (
+        <div className={styles.viewContent.container}>
+            <h2 className={styles.viewContent.title} >View Content</h2>
+            <PersonalizedSpan />
+            <Button item={({ text: "Button" })} />
+            <CustomText />
+        </div>
+    )
+}

@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 const useLogic = () => {
 	const actionToDefaultAction = () => {
-		// window.open("https://www.google.com", "_blank");
         alert("useLogic modified onClic");
 	}
 

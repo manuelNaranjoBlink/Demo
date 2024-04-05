@@ -1,21 +1,18 @@
 'use client'
-import React from "react";
+import { LibrariesContext } from "@/contexts/LibrariesProvider";
+import React, { useContext } from "react";
 
 export default ({ item, className, onClick, disabled, startIcon }) => {
 
-
-    // const app = "DominioA"
-    // const LOGICDIR = (require(`@/app/domain/${app}/domain.config`)).LOGICDIR;
-    // let useLogic = (require("@/useLogic/ButtonLogic/" + LOGICDIR)).default;
-    // const { performDefaultAction } = useLogic();
+    const { logic } = useContext(LibrariesContext);
+    const { performDefaultAction } = logic.default();
 
     const handleClick = () => {
         console.log(onClick)
         if (onClick) {
             onClick();
         } else {
-            alert("performDefaultAction")
-            // performDefaultAction();
+            performDefaultAction();
         }
     };
 

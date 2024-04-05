@@ -1,17 +1,18 @@
-'use client'
-import { LibrariesContext } from "@/contexts/LibrariesProvider";
-import { useContext } from 'react';
+import { LibraryProvider } from "@/contexts/LibrariesProvider";
+import Components from '@/libs/libB/';
+import styles from "@/themes/themeB"
 import './saopaulo.css';
 
-export default async function Saopaulo() {
-  const { styles, components } = useContext(LibrariesContext);
-  const { AppBar, ViewContent } = components
+export default async () => {
 
+  const { AppBar, ViewContent } = Components
 
   return (
-    <div className={styles.home.main}>
-      <AppBar />
-      <ViewContent />
-    </div>
+    <LibraryProvider logicApp={'useModified'} styles={styles}>
+      <div className={styles.home.main}>
+        <AppBar />
+        <ViewContent />
+      </div>
+    </LibraryProvider>
   )
 }

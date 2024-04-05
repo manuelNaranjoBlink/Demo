@@ -2,7 +2,8 @@ import CustomText from "./components/CustomText";
 import Button from "./components/Button";
 import AppBar from "./components/AppBar";
 // import libA from "../libA/index.jsx";
-import { ViewContent } from "./components/ViewContent";
+import ViewContent from "./components/ViewContent";
+import PersonalizedSpan from "./components/PersonalizedSpan";
 
 export default {
     // ...libA,
@@ -11,7 +12,5 @@ export default {
     AppBar: AppBar,
     CustomText: CustomText,
     ViewContent: ViewContent,
-    PersonalizedSpan: () => {
-        return <span>Personalized Span B</span>
-    },
+    PersonalizedSpan: PersonalizedSpan
 }

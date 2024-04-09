@@ -22,7 +22,7 @@ const menuItems = [[
 ]];
 
 
-export default async (props) => {
+export default (props) => {
     
     const { styles } = useContext(LibrariesContext);
 

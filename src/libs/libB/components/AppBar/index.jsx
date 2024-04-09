@@ -21,7 +21,7 @@ const menuItems = [[
     { text: "Contact", icon: ContactIcon },
 ]];
 
-export default async (props) => {
+export default (props) => {
 
     const { styles } = useContext(LibrariesContext);
 

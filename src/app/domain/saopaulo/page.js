@@ -3,7 +3,7 @@ import Components from '@/libs/libB/';
 import styles from "@/themes/themeB"
 import './saopaulo.css';
 
-export default async () => {
+export default () => {
 
   const { AppBar, ViewContent } = Components
 

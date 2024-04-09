@@ -3,7 +3,7 @@ import Components from '@/libs/libA/';
 import styles from "@/themes/themeA"
 import './blink.css';
 
-export default async () => {
+export default () => {
 
   const { AppBar, ViewContent } = Components
 

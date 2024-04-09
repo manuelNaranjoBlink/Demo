@@ -1,11 +1,12 @@
 "use client"
 import React, { useContext } from "react";
+import Link from 'next/link';
 // import componentsLibrary from "../..";
 import { LibrariesContext } from "@/contexts/LibrariesProvider";
 import CustomText from "../CustomText";
 import PersonalizedSpan from "../PersonalizedSpan";
 
-export default async() => {
+export default () => {
 
     const { styles } = useContext(LibrariesContext);
     // const { CustomText, PersonalizedSpan } = componentsLibrary
@@ -13,6 +14,7 @@ export default async() => {
     return (
         <div className={styles.viewContent.container}>
             <h2 className={styles.viewContent.title} >View Content</h2>
+            <Link href="/test">Test Page</Link>
             <PersonalizedSpan />
             {/* <Button item={({ text: "Button" })} /> */}
             <CustomText />

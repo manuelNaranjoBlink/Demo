@@ -3,12 +3,21 @@ import React, { createContext, useEffect, useState } from 'react';
 
 export const LibrariesContext = createContext(null);
 
-export const LibraryProvider = async ({ children, styles, logicApp }) => {
-    
-    const logic = (await import("../../useLogic/ButtonLogic/" + logicApp))
+export const LibraryProvider = ({ children, styles, logicApp }) => {
+
+    useEffect(() => {
+        initialLoad()
+    }, [])
+
+    const [logic, setLogic] = useState()
+
+    const initialLoad = async () => {
+        setLogic(await import("../../useLogic/ButtonLogic/" + logicApp))
+    }
+
 
     return (
-        <LibrariesContext.Provider value={{ styles, logic }}>
+        logic && <LibrariesContext.Provider value={{ styles, logic }}>
             {children}
         </LibrariesContext.Provider>
     );

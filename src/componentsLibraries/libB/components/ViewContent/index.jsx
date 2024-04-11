@@ -14,7 +14,7 @@ export default () => {
     return (
         <div className={styles.viewContent.container}>
             <h2 className={styles.viewContent.title} >View Content</h2>
-            <Link href="/test">Test Page</Link>
+            <Link href="/test" style={{color: 'blue'}}>Test Page</Link>
             <PersonalizedSpan />
             {/* <Button item={({ text: "Button" })} /> */}
             <CustomText />

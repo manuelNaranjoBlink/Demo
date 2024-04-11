@@ -1,4 +1,5 @@
 // useLogic.js
+'use client'
 import { useState } from 'react';
 
 const useLogic = () => {

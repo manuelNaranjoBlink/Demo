@@ -8,13 +8,13 @@ export const login = async (name, password) => {
     // const domain = await (res.json())
     // const domainToLoad = domain.filter(module => module.active)[0]?.domain; 
     if (name && name.trim() !== '') {
-        cookies().set('session', `${name.includes('b') ? 'blink' : 'saopaulo'}AND${USSER_LOGGED}`)
+        await cookies().set('session', `${name.includes('b') ? 'blink' : 'saopaulo'}AND${USSER_LOGGED}`)
         redirect('/');
     }
 }
 
 export const logout = async () => {
     // const res = await fetch('http://demo7540337.mockable.io/blink');
-    cookies().set('session', '', { expires: new Date(0) })
+    await cookies().set('session', '', { expires: new Date(0) })
     redirect('/login');
 }

@@ -1,18 +1,14 @@
 import { NextResponse } from 'next/server'
 
-// const USSER_LOGGED = false
-// const DOMAIN =
-//     'blink'
-// 'saopaulo'
-
 export async function middleware(request) {
     const session = request.cookies.has('session')
-    if (session) {
-        const { value } = request.cookies.get('session')
+    const { value } = session ? request.cookies.get('session') : { value: '' }
+    const url = request.nextUrl.clone()
+    const urlPath = url.pathname
+    if (value != '') {
         const [DOMAIN, USSER_LOGGED] = value.split('AND')
         if (USSER_LOGGED == 'true') {
-            const url = request.nextUrl.clone()
-            const urlPath = url.pathname
+
             if (urlPath.includes('/login')) {
                 url.pathname = `/`
                 return NextResponse.redirect(url)
@@ -22,8 +18,6 @@ export async function middleware(request) {
             }
         }
     }
-    const url = request.nextUrl.clone()
-    const urlPath = url.pathname
     url.pathname = `/default${urlPath}`
     return NextResponse.rewrite(url)
 }

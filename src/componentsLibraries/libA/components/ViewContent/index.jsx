@@ -1,16 +1,13 @@
 'use client'
 import React, { useContext } from "react";
 import Link from 'next/link';
-// import libA from "../../";
 import { LibrariesContext } from "@/contexts/LibrariesProvider";
-import InputNumber from "../InputNumber";
-import PersonalizedSpan from "../PersonalizedSpan";
-import Button from "../Button";
+import libA from "../../";
 
 export default () => {
 
     const { styles } = useContext(LibrariesContext);
-    // const { InputNumber, PersonalizedSpan, Button } = libA
+    const { InputNumber, PersonalizedSpan, Button } = libA
 
     return (
         <div className={styles.viewContent.container}>

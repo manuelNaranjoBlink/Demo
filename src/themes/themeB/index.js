@@ -16,4 +16,5 @@ export default {
         appBar: style.appBar,
         ul: style.ul
     },
+    buttonLink: style.buttonLink
 }

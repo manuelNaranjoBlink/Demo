@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ComponentsLibrary, ThemeLibrary } from './domain.config';
 import "./globals.css";
 import { logout } from "@/lib/login";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,13 +23,7 @@ export default function RootLayout({ children }) {
         <LibraryProvider logicApp={'useModified'} styles={styles}>
           <div className={styles.home.main}>
             <AppBar />
-            <form
-              action={async () => {
-                'use server'
-                await logout();
-              }}>
-              <button type='submit'>LogOut</button>
-            </form>
+            <Link className={styles.buttonLink} href="/logout" style={{ color: 'blue' }}>Logout</Link>
             {children}
           </div>
         </LibraryProvider>

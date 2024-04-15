@@ -52,3 +52,27 @@
     color: rgb(198, 187, 42);
     margin: 20px 0;
 }
+
+.input {
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #b7d2d3;
+    background-color: #fbfbfb;
+}
+
+.button {
+    composes: input;
+    margin-top: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.button:active {
+    background-color: #d3d3d37a;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.buttonLink {
+    composes: button;
+    margin: 20px;
+}

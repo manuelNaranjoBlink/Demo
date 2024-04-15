@@ -8,7 +8,6 @@ export default ({ item, className, onClick, disabled, startIcon }) => {
     const { performDefaultAction } = logic.default();
 
     const handleClick = () => {
-        console.log(onClick)
         if (onClick) {
             onClick();
         } else {

@@ -4,6 +4,7 @@ import AppBar from "./components/AppBar";
 // import libA from "../libA/index.jsx";
 import ViewContent from "./components/ViewContent";
 import PersonalizedSpan from "./components/PersonalizedSpan";
+import NavigationBar from "./components/NavigationBar";
 
 export default {
     // ...libA,
@@ -12,5 +13,6 @@ export default {
     AppBar: AppBar,
     CustomText: CustomText,
     ViewContent: ViewContent,
-    PersonalizedSpan: PersonalizedSpan
+    PersonalizedSpan: PersonalizedSpan,
+    NavigationBar: NavigationBar
 }

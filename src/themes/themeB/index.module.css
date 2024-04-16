@@ -1,9 +1,33 @@
-.main {
+.generalView {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* padding: 6rem; */
-    min-height: 100vh;
+    height: 100vh;
+}
+
+.menuNavigationButton {
+    width: 60px;
+    align-content: center;
+    text-align: center;
+}
+
+.fillSvg {
+    fill: white;
+}
+
+.menuNavigationButton:hover {
+    background-color: white;
+}
+
+.menuNavigationButton:hover .fillSvg {
+    fill: rgb(198, 187, 42);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
@@ -34,11 +58,28 @@
 }
 
 .appBar {
-    width: 90%;
+    width: 100%;
     display: flex;
     place-content: space-between;
     height: 50px;
     background-color: rgb(198, 187, 42);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.generalLink {
+    color: blue
+}
+
+.testContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ul {
@@ -75,4 +116,29 @@
 .buttonLink {
     composes: button;
     margin: 20px;
+}
+
+.navigationBar {
+    min-width: 60px;
+    background-color: #FFFFFF;
+}
+
+.navigationBarOpened {
+    width: 240px;
+    background-color: #FFFFFF;
+    /* background-color: rgb(58, 198, 42); */
+}
+
+.navigationButon {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationOpenButon {
+    composes: navigationButon;
+    padding: 0 32px;
+    justify-content: flex-start;
 }

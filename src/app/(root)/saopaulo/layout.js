@@ -2,8 +2,7 @@ import { LibraryProvider } from "@/contexts/LibrariesProvider";
 import { Inter } from "next/font/google";
 import { ComponentsLibrary, ThemeLibrary } from './domain.config';
 import "./globals.css";
-import { logout } from "@/lib/login";
-import Link from "next/link";
+import { StatesProvider } from "@/contexts/StatesContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,17 +14,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   const styles = ThemeLibrary()
-  const { AppBar } = ComponentsLibrary()
+  const { AppBar, NavigationBar } = ComponentsLibrary()
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <LibraryProvider logicApp={'useModified'} styles={styles}>
-          <div className={styles.home.main}>
-            <AppBar />
-            <Link className={styles.buttonLink} href="/logout" style={{ color: 'blue' }}>Logout</Link>
-            {children}
-          </div>
+          <StatesProvider>
+            <div className={styles.home.generalView}>
+              <AppBar />
+              <div className={styles.home.main}>
+                <NavigationBar />
+                <div className={styles.home.content}>
+                  {children}
+                </div>
+              </div>
+            </div>
+          </StatesProvider>
         </LibraryProvider>
       </body>
     </html >

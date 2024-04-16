@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ className, text }) => {
+export default function CustomText({ className, text }) {
 
     return (
         <span className={className} >

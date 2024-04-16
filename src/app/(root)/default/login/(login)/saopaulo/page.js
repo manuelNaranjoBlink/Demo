@@ -7,7 +7,7 @@ export default function LoginPage() {
     return <>
         <div className={styles.appbar}>
             <Link className={styles.buttonLink} href="/" >Home</Link>
-            <h1 >Login Page</h1>
+            <h1 >Sao Paulo Login Page</h1>
         </div>
         <form
             action={async (formData) => {

@@ -29,15 +29,19 @@
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
+
 .buttonLink {
     composes: button;
     margin: 0;
-    /* position: absolute; */
+    position: absolute;
     left: 0;
     color: blue;
 }
 
 .appbar {
+    display: flex;
+    align-items: center;
     width: 100%;
-    text-align: center;
+    justify-content: center;
+    position: relative;
 }

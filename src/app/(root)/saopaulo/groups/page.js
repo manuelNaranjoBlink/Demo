@@ -8,7 +8,7 @@ export default () => {
 
     return (
         <div className={styles.test.container}>
-            <Link href="/" className={styles.general.link}>Home Page</Link>
+            <Link href="/resources" className={styles.general.link}>Home Page</Link>
             <span>SaoPaulo Test Page</span>
         </div>
     )

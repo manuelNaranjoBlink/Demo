@@ -6,7 +6,7 @@ export default function LoginPage() {
 
     return <>
         <div className={styles.appbar}>
-            <Link className={styles.buttonLink} href="/" >Home</Link>
+            <Link className={styles.buttonLink} href="/resources" >Home</Link>
             <h1 >Blink Login Page</h1>
         </div>
         <form

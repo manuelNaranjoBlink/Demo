@@ -18,7 +18,7 @@ export async function middleware(request) {
         if (session == 'true') {
             if (urlPath.includes('/login')) {
                 url.searchParams.delete('domain')
-                url.pathname = `/`
+                url.pathname = `/resources`
                 return NextResponse.redirect(url)
             } else {
                 url.pathname = `/${domain}${urlPath}`
@@ -26,7 +26,7 @@ export async function middleware(request) {
             }
         }
     }
-    if (urlPath === '/login') {
+    if (urlPath.includes('/login')) {
         const LOGIN_DOMAIN = url.searchParams.get('domain')
         url.pathname = `/default/login/${LOGIN_DOMAIN}`
         const respponse = NextResponse.rewrite(url)

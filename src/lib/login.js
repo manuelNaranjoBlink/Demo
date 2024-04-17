@@ -6,6 +6,6 @@ const USSER_LOGGED = true
 export const login = async (name, password) => {
     // if (name && name.trim() !== '') {
         await cookies().set('session', `${USSER_LOGGED}`)
-        redirect('/');
+        redirect('/resources');
     // }
 }

@@ -6,7 +6,7 @@ import NavigationItem from "./components/NavigationItem";
 import { BlinkAnalyticsIcon, CalendarioIcon, CatálogoIcon, ClasesIcon, ContenidoIcon, DocentesIcon, MensajesIcon, RecursosIcon, RúbricasIcon } from "./components/Icons";
 
 const navigationItems = [
-    { text: "Contenido", icon: ContenidoIcon, href: '/' },
+    { text: "Contenido", icon: ContenidoIcon, href: '/resources' },
     { text: "Recursos", icon: RecursosIcon },
     { text: "Clases", icon: ClasesIcon, href: '/groups' },
     { text: "Rúbricas", icon: RúbricasIcon },

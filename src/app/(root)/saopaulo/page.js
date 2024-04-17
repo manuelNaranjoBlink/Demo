@@ -3,11 +3,11 @@ import './saopaulo.css';
 
 export default () => {
 
-  const { ViewContent } = ComponentsLibrary()
+  const { ViewBooks } = ComponentsLibrary()
 
   return (
     <>
-      <ViewContent />
+      <ViewBooks />
     </>
   )
 }

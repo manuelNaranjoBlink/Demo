@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ComponentsLibrary, ThemeLibrary } from './domain.config';
 import "./globals.css";
 import { StatesProvider } from "@/contexts/StatesContext";
+import MainContainer from "@/app/components/MainContainer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,9 +26,9 @@ export default function RootLayout({ children }) {
               <AppBar />
               <div className={styles.home.main}>
                 <NavigationBar />
-                <div className={styles.home.content}>
+                <MainContainer>
                   {children}
-                </div>
+                </MainContainer>
               </div>
             </div>
           </StatesProvider>

@@ -1,13 +1,14 @@
-import { ComponentsLibrary } from './domain.config';
+import { Suspense } from 'react';
+import ViewBooksSection from './components/ViewBooks'
 import './blink.css';
 
-export default () => {
-
-  const { ViewContent } = ComponentsLibrary()
+export default async function MainPage() {
 
   return (
-    <>
-      <ViewContent />
-    </>
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ViewBooksSection />
+      </Suspense>
+    </div>
   )
 }

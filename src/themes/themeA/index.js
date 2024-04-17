@@ -9,7 +9,13 @@ export default {
     viewContent: {
         container: style.container,
         probandoCSS: style.probandoCSS,
-        title: style.title
+        title: style.title,
+        booksContainer: style.booksContainer,
+        book: style.book,
+        thumb: style.thumb,
+        thumbContainer: style.thumbContainer,
+        bookTitle: style.bookTitle,
+        bookAuthor: style.bookAuthor,
     },
     test: {
         container: style.testContainer

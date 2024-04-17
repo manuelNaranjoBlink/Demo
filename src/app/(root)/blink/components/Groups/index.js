@@ -1,0 +1,241 @@
+import { ComponentsLibrary } from "../../domain.config"
+
+const RESPONSE = {
+    "apiVersion": "1.0",
+    "method": "Group.myGroups",
+    "context": "/api/v/1/my/groups",
+    "params": null,
+    "updated": 1713335746,
+    "data": {
+        "67108870": {
+            "id": 6,
+            "uuid": 67108870,
+            "closed": false,
+            "code": "CL82431229",
+            "idLevel": 2,
+            "idOwner": 7,
+            "idTutor": 0,
+            "isTemplate": false,
+            "isDemo": false,
+            "name": "Educación infantil (0-3 años) A Alemán ",
+            "idSubject": 49,
+            "letter": "A",
+            "created": false,
+            "updated": 1710171499,
+            "urlQR": false,
+            "idSchool": 1,
+            "color": "#00A9EB",
+            "imagen": "4.jpg",
+            "gradeSystemName": "basic",
+            "letterNotes": false,
+            "isCopy": false,
+            "isExternal": false,
+            "isArchived": false,
+            "isVideoconferenceEnabled": true,
+            "isGroupRubricsEnabled": true,
+            "position": 1,
+            "idBookHomework": 9,
+            "rules": {
+                "canEdit": true,
+                "canEditProperties": true,
+                "canDelete": true,
+                "canLock": true,
+                "showCode": true
+            }
+        },
+        "67108872": {
+            "id": 8,
+            "uuid": 67108872,
+            "closed": true,
+            "code": "",
+            "idLevel": 0,
+            "idOwner": 7,
+            "idTutor": 0,
+            "isTemplate": false,
+            "isDemo": true,
+            "name": "(DEMO)",
+            "idSubject": 0,
+            "letter": "",
+            "created": false,
+            "updated": 1710149847,
+            "idSchool": 1,
+            "color": false,
+            "imagen": false,
+            "gradeSystemName": "basic",
+            "letterNotes": false,
+            "isCopy": false,
+            "isExternal": false,
+            "isArchived": false,
+            "isVideoconferenceEnabled": true,
+            "isGroupRubricsEnabled": true,
+            "position": 5,
+            "idBookHomework": 0,
+            "rules": {
+                "canEdit": false,
+                "canEditProperties": false,
+                "canDelete": true,
+                "canLock": false,
+                "showCode": false
+            }
+        },
+        "67108873": {
+            "id": 9,
+            "uuid": 67108873,
+            "closed": true,
+            "code": "",
+            "idLevel": 0,
+            "idOwner": 7,
+            "idTutor": 0,
+            "isTemplate": false,
+            "isDemo": true,
+            "name": "(DEMO)",
+            "idSubject": 0,
+            "letter": "",
+            "created": false,
+            "updated": 1710433322,
+            "idSchool": 1,
+            "color": false,
+            "imagen": false,
+            "gradeSystemName": "basic",
+            "letterNotes": false,
+            "isCopy": false,
+            "isExternal": false,
+            "isArchived": false,
+            "isVideoconferenceEnabled": true,
+            "isGroupRubricsEnabled": true,
+            "position": 4,
+            "idBookHomework": 13,
+            "rules": {
+                "canEdit": false,
+                "canEditProperties": false,
+                "canDelete": true,
+                "canLock": false,
+                "showCode": false
+            }
+        },
+        "67108874": {
+            "id": 10,
+            "uuid": 67108874,
+            "closed": false,
+            "code": "CL27236257",
+            "idLevel": 0,
+            "idOwner": 7,
+            "idTutor": 0,
+            "isTemplate": false,
+            "isDemo": false,
+            "name": " Administración y gestión ",
+            "idSubject": 91,
+            "letter": "",
+            "created": false,
+            "updated": 1711457077,
+            "urlQR": false,
+            "idSchool": 1,
+            "color": false,
+            "imagen": false,
+            "gradeSystemName": "basic",
+            "letterNotes": false,
+            "isCopy": false,
+            "isExternal": false,
+            "isArchived": false,
+            "isVideoconferenceEnabled": true,
+            "isGroupRubricsEnabled": true,
+            "position": 0,
+            "idBookHomework": 0,
+            "rules": {
+                "canEdit": true,
+                "canEditProperties": true,
+                "canDelete": true,
+                "canLock": true,
+                "showCode": true
+            }
+        },
+        "67108875": {
+            "id": 11,
+            "uuid": 67108875,
+            "closed": false,
+            "code": "CL84742514",
+            "idLevel": 0,
+            "idOwner": 7,
+            "idTutor": 0,
+            "isTemplate": false,
+            "isDemo": false,
+            "name": "A Alemán ",
+            "idSubject": 49,
+            "letter": "A",
+            "created": false,
+            "updated": 1710747873,
+            "urlQR": false,
+            "idSchool": 1,
+            "color": false,
+            "imagen": false,
+            "gradeSystemName": "basic",
+            "letterNotes": false,
+            "isCopy": false,
+            "isExternal": false,
+            "isArchived": false,
+            "isVideoconferenceEnabled": true,
+            "isGroupRubricsEnabled": true,
+            "position": 2,
+            "idBookHomework": 0,
+            "rules": {
+                "canEdit": true,
+                "canEditProperties": true,
+                "canDelete": true,
+                "canLock": true,
+                "showCode": true
+            }
+        },
+        "67108876": {
+            "id": 12,
+            "uuid": 67108876,
+            "closed": false,
+            "code": "CL38444217",
+            "idLevel": 2,
+            "idOwner": 7,
+            "idTutor": 0,
+            "isTemplate": false,
+            "isDemo": false,
+            "name": "A editado",
+            "idSubject": 13,
+            "letter": "A",
+            "created": false,
+            "updated": 1710433428,
+            "urlQR": false,
+            "idSchool": 1,
+            "color": false,
+            "imagen": false,
+            "gradeSystemName": "basic",
+            "letterNotes": false,
+            "isCopy": false,
+            "isExternal": false,
+            "isArchived": false,
+            "isVideoconferenceEnabled": true,
+            "isGroupRubricsEnabled": true,
+            "position": 3,
+            "idBookHomework": 12,
+            "rules": {
+                "canEdit": true,
+                "canEditProperties": true,
+                "canDelete": true,
+                "canLock": true,
+                "showCode": true
+            }
+        }
+    }
+}
+
+export default async function ViewGroupsSection() {
+
+    const fetchData = async () => {
+        await new Promise((resolve) => setTimeout(resolve, 2000))
+        return RESPONSE
+    }
+
+    const response = await fetchData()
+
+    const { ViewGroups } = ComponentsLibrary()
+
+    return (
+        <ViewGroups groups={response.data} />
+    )
+}

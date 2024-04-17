@@ -61,7 +61,7 @@
     width: 100%;
     display: flex;
     place-content: space-between;
-    height: 50px;
+    min-height: 50px;
     background-color: rgb(198, 187, 42);
 }
 

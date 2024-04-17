@@ -6,9 +6,9 @@ import NavigationItem from "./components/NavigationItem";
 import { BlinkAnalyticsIcon, CalendarioIcon, CatálogoIcon, ClasesIcon, ContenidoIcon, DocentesIcon, MensajesIcon, RecursosIcon, RúbricasIcon } from "./components/Icons";
 
 const navigationItems = [
-    { text: "Contenido", icon: ContenidoIcon },
+    { text: "Contenido", icon: ContenidoIcon, href: '/' },
     { text: "Recursos", icon: RecursosIcon },
-    { text: "Clases", icon: ClasesIcon },
+    { text: "Clases", icon: ClasesIcon, href: '/groups' },
     { text: "Rúbricas", icon: RúbricasIcon },
     { text: "Mensajes", icon: MensajesIcon },
     { text: "Calendario", icon: CalendarioIcon },
@@ -26,7 +26,7 @@ export default function NavigationBar(props) {
         <nav className={openNavBar ? styles.navigationBar.navigationBarOpened : styles.navigationBar.navigationBar} >
             <ul>
                 {navigationItems.map((item, index) => {
-                    return <NavigationItem key={index} openNavBar={openNavBar} text={item.text} icon={item.icon} />
+                    return <NavigationItem key={index} openNavBar={openNavBar} text={item.text} icon={item.icon} href={item.href} />
                 })}
             </ul>
         </nav>

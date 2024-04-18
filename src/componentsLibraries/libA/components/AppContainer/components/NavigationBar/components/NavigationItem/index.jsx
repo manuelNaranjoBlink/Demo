@@ -1,12 +1,22 @@
 import React from "react"
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function NavigationItem({ openNavBar, icon, text, href }) {
 
     const { push } = useRouter();
+    const pathname = usePathname();
+    console.log("HERE pathname", pathname)
+    console.log("HERE href", href)
+    let className = ['navigation-button']
+    if (pathname === href) {
+        className.push('active')
+    }
+    if (openNavBar) {
+        className.push('open')
+    }
 
     return (
-        <li className={openNavBar ? 'navigation-button open' : 'navigation-button'} onClick={() => href && push(href)}>
+        <li className={className.join(' ')} onClick={() => href && push(href)}>
             {icon}
             {openNavBar && <span style={{ marginLeft: '8px' }}>{text}</span>}
         </li >

@@ -3,7 +3,7 @@ import React from "react";
 export default function ViewResources({ Resources }) {
 
     return (
-        <ul className='Resources-container'>
+        <ul className='resources-container'>
             {Object.values(Resources).map((book, index) => {
                 return (
                     <li className='book' key={index}>

@@ -1,18 +1,10 @@
-import { Suspense } from 'react';
-import ViewGroupsSection from '../components/Groups';
-import { ThemeLibrary } from '../domain.config';
-import ViewGroupsSectionSkeleton from '../components/Groups/components/Skeleton';
+import { ComponentsLibrary } from '../domain.config';
 
 export default () => {
 
-    const styles = ThemeLibrary()
+    const { GroupsPage } = ComponentsLibrary()
 
     return (
-        <div className={styles.viewContent.container}>
-            <h2 className={styles.viewContent.title} >View Groups</h2>
-            <Suspense fallback={<ViewGroupsSectionSkeleton />}>
-                <ViewGroupsSection />
-            </Suspense>
-        </div>
+        <GroupsPage />
     )
 }

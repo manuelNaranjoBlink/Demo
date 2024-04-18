@@ -1,4 +1,4 @@
-import { ComponentsLibrary } from "../../domain.config"
+import ViewGroups from "./components/ViewGroups"
 
 const RESPONSE = {
     "apiVersion": "1.0",
@@ -78,8 +78,6 @@ export default async function ViewGroupsSection() {
     }
 
     const response = await fetchData()
-
-    const { ViewGroups } = ComponentsLibrary()
 
     return (
         <ViewGroups groups={response.data} />

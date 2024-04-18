@@ -1,8 +1,7 @@
-import { LibraryProvider } from "@/contexts/LibrariesProvider";
 import { Inter } from "next/font/google";
-import { ComponentsLibrary, ThemeLibrary } from './domain.config';
+import { ComponentsLibrary } from './domain.config';
 import "./globals.css";
-import { StatesProvider } from "@/contexts/StatesContext";
+import '@/themes/themeA/themeA.css';
 import MainContainer from "@/app/components/MainContainer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -14,25 +13,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  const styles = ThemeLibrary()
-  const { AppBar, NavigationBar } = ComponentsLibrary()
+  const { AppContainer } = ComponentsLibrary()
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <LibraryProvider logicApp={'useModified'} styles={styles}>
-          <StatesProvider>
-            <div className={styles.home.generalView}>
-              <AppBar />
-              <div className={styles.home.main}>
-                <NavigationBar />
-                <MainContainer>
-                  {children}
-                </MainContainer>
-              </div>
-            </div>
-          </StatesProvider>
-        </LibraryProvider>
+        <AppContainer>
+          <MainContainer >
+            {children}
+          </MainContainer>
+        </AppContainer>
       </body>
     </html >
   );

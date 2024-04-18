@@ -10,7 +10,7 @@ export default {
         container: style.container,
         probandoCSS: style.probandoCSS,
         title: style.title,
-        booksContainer: style.booksContainer,
+        ResourcesContainer: style.ResourcesContainer,
         book: style.book,
         thumb: style.thumb,
         thumbContainer: style.thumbContainer,

@@ -10,7 +10,7 @@
     height: 100vh;
 }
 
-.booksContainer {
+.ResourcesContainer {
     width: 100%;
     display: flex;
     place-content: baseline;

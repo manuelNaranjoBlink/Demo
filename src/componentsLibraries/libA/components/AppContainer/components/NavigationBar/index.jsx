@@ -1,7 +1,4 @@
-'use client'
-import React, { useContext } from "react";
-import { LibrariesContext } from "@/contexts/LibrariesProvider";
-import { StatesContext } from "@/contexts/StatesContext";
+import React from "react";
 import NavigationItem from "./components/NavigationItem";
 import { BlinkAnalyticsIcon, CalendarioIcon, CatálogoIcon, ClasesIcon, ContenidoIcon, DocentesIcon, MensajesIcon, RecursosIcon, RúbricasIcon } from "./components/Icons";
 
@@ -19,11 +16,10 @@ const navigationItems = [
 
 export default function NavigationBar(props) {
 
-    const { styles } = useContext(LibrariesContext);
-    const { openNavBar } = useContext(StatesContext);
+    const { openNavBar } = props;
 
     return (
-        <nav className={openNavBar ? styles.navigationBar.navigationBarOpened : styles.navigationBar.navigationBar} >
+        <nav className={openNavBar ? 'navigation-menu open' : 'navigation-menu'} >
             <ul>
                 {navigationItems.map((item, index) => {
                     return <NavigationItem key={index} openNavBar={openNavBar} text={item.text} icon={item.icon} href={item.href} />

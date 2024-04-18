@@ -11,7 +11,7 @@ export default function ViewContent() {
 
     return (
         <div className={styles.viewContent.container}>
-            <h2 className={styles.viewContent.title} >View Books</h2>
+            <h2 className={styles.viewContent.title} >View Resources</h2>
             <Link href="/groups" className={styles.general.link}>Test Page</Link>
             <PersonalizedSpan />
             {/* <Button item={({ text: "Button" })} /> */}

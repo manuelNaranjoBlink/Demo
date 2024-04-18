@@ -2,7 +2,7 @@ import CustomText from "./components/CustomText";
 import Button from "./components/Button";
 import AppBar from "./components/AppBar";
 // import libA from "../libA/index.jsx";
-import ViewBooks from "./components/ViewBooks";
+import ViewResources from "./components/ViewResources";
 import PersonalizedSpan from "./components/PersonalizedSpan";
 import NavigationBar from "./components/NavigationBar";
 
@@ -12,7 +12,7 @@ export default {
     Button: Button,
     AppBar: AppBar,
     CustomText: CustomText,
-    ViewBooks: ViewBooks,
+    ViewResources: ViewResources,
     PersonalizedSpan: PersonalizedSpan,
     NavigationBar: NavigationBar
 }

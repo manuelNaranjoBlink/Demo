@@ -1,9 +1,6 @@
-'use client'
-import React, { useContext } from "react";
-import { LibrariesContext } from "@/contexts/LibrariesProvider";
-import { StatesContext } from "@/contexts/StatesContext";
-import Button from "../Button";
+import React from "react";
 import { AboutIcon, ContactIcon, FreeTrialIcon, HomeIcon, SettingsIcon, UserNameIcon } from "./components/Icons";
+import Button from "../../../Button";
 
 const menuItems = [[
     { text: "Home", icon: HomeIcon, action: () => { alert('Home') } },
@@ -19,13 +16,10 @@ const menuItems = [[
 
 export default function AppBar(props) {
 
-    const { styles } = useContext(LibrariesContext);
-    const { openNavBar, setOpenNavBar } = useContext(StatesContext);
-
     return (
-        <nav className={styles.appBar.appBar} >
-            <ul key={0} className={styles.appBar.ul} >
-                <li onClick={() => setOpenNavBar(!openNavBar)} className={styles.appBar.navigationButton}>
+        <nav className='appBar' >
+            <ul key={0} className='items-list' >
+                <li onClick={() => props.setOpenNavBar()} className='menu-navigation-button'>
                     <svg
                         version="1.1"
                         id="_x32_"
@@ -36,12 +30,12 @@ export default function AppBar(props) {
                         style={{ width: '50%', height: '50%' }}
                     >
                         <g>
-                            <circle className={styles.appBar.fillSvg} cx={48} cy={64} r={48} />
-                            <rect x={160} y={16} className={styles.appBar.fillSvg} width={352} height={96} />
-                            <circle className={styles.appBar.fillSvg} cx={48} cy={256} r={48} />
-                            <rect x={160} y={208} className={styles.appBar.fillSvg} width={352} height={96} />
-                            <circle className={styles.appBar.fillSvg} cx={48} cy={448} r={48} />
-                            <rect x={160} y={400} className={styles.appBar.fillSvg} width={352} height={96} />
+                            <circle className='fill-svg' cx={48} cy={64} r={48} />
+                            <rect x={160} y={16} className='fill-svg' width={352} height={96} />
+                            <circle className='fill-svg' cx={48} cy={256} r={48} />
+                            <rect x={160} y={208} className='fill-svg' width={352} height={96} />
+                            <circle className='fill-svg' cx={48} cy={448} r={48} />
+                            <rect x={160} y={400} className='fill-svg' width={352} height={96} />
                         </g>
                     </svg>
                 </li>
@@ -49,7 +43,7 @@ export default function AppBar(props) {
                     <li key={item.text} >
                         <Button
                             key={item.text}
-                            className={styles.appBar.buttonCustomStyle}
+                            className='appbar-btn'
                             onClick={item?.action}
                             item={item}
                             startIcon={item.icon}
@@ -59,12 +53,12 @@ export default function AppBar(props) {
             </ul>
             {menuItems.map((menuItem, i) =>
                 i > 0 &&
-                <ul key={i} className={styles.appBar.ul} >
+                <ul key={i} className='items-list' >
                     {menuItem.map((item) =>
                         <li key={item.text} >
                             <Button
                                 key={item.text}
-                                className={styles.appBar.buttonCustomStyle}
+                                className='appbar-btn'
                                 onClick={item?.action}
                                 item={item}
                                 startIcon={item.icon}

@@ -1,6 +1,6 @@
 import { ComponentsLibrary } from '../domain.config';
 
-export default () => {
+export default function ResourcesPage() {
 
   const { ResourcesPage } = ComponentsLibrary()
 

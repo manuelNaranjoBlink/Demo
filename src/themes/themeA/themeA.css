@@ -251,7 +251,7 @@
   color: white
 }
 
-.resource-container-skeleton {
+.group-container-skeleton {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px 16px;
@@ -259,18 +259,18 @@
   padding: 32px;
 }
 
-.resource-skeleton {
+.group-skeleton {
   height: 192px;
   display: flex;
   background-color: white;
 }
 
-.resource-skeleton .image-skeleton {
+.group-skeleton .image-skeleton {
   min-width: 160px;
   background-color: #d2d6d7;
 }
 
-.resource-skeleton .container-skeleton {
+.group-skeleton .container-skeleton {
   padding: 1.5em 2.5em 1.5em 1.8em;
   display: flex;
   flex-direction: column;
@@ -278,36 +278,80 @@
   width: 100%;
 }
 
-.resource-skeleton .container-skeleton .section-skeleton {
+.group-skeleton .container-skeleton .section-skeleton {
   display: flex;
   place-content: space-between;
   width: 100%;
 }
 
-.resource-skeleton .container-skeleton .title-skeleton {
+.group-skeleton .container-skeleton .title-skeleton {
   width: 250px;
   height: 23px;
   background-color: #d2d6d7;
 }
 
-.resource-skeleton .container-skeleton .icon-skeleton {
+.group-skeleton .container-skeleton .icon-skeleton {
   width: 20px;
   height: 20px;
   background-color: #d2d6d7;
 }
 
-.resource-skeleton .container-skeleton .code-section-skeleton {
+.group-skeleton .container-skeleton .code-section-skeleton {
   display: flex;
   height: 20px;
 }
 
-.resource-skeleton .container-skeleton .code-skeleton {
+.group-skeleton .container-skeleton .code-skeleton {
   width: 100px;
   background-color: #d2d6d7;
   margin-right: 5px;
 }
 
-.resource-skeleton .container-skeleton .copy-skeleton {
+.group-skeleton .container-skeleton .copy-skeleton {
   width: 17px;
   background-color: #d2d6d7;
+}
+
+.resource-container-skeleton {
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resource-container-skeleton .resource-list-skeleton {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  place-content: baseline;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+}
+
+.resource-container-skeleton .resource-list-skeleton .resource-skeleton {
+  width: 210px;
+  height: 375px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-container-skeleton .resource-list-skeleton .resource-skeleton .image-skeleton {
+  height: 270px;
+  width: 190px;
+  background: #d2d6d7;
+}
+
+.resource-container-skeleton .resource-list-skeleton .resource-skeleton .title-skeleton {
+  height: 23px;
+  width: 190px;
+  background: #d2d6d7;
+  margin-top: 20px;
+}
+
+.resource-container-skeleton .resource-list-skeleton .resource-skeleton .author-skeleton {
+  height: 18px;
+  width: 120px;
+  background: #d2d6d7;
+  margin-top: 5px;
 }

@@ -42,7 +42,6 @@ export default async function ViewResourcesSection() {
     }
 
     const response = await fetchData()
-    console.log("HERE response.data", response.data)
 
     return (
         <ViewResources resources={response.data} />

@@ -2,7 +2,7 @@
 export default function ViewGroupsSectionSkeleton() {
 
     return (
-        <div className="resource-container-skeleton">
+        <div className="group-container-skeleton">
             <GroupItemSkeleton />
             <GroupItemSkeleton />
             <GroupItemSkeleton />
@@ -14,7 +14,7 @@ export default function ViewGroupsSectionSkeleton() {
 }
 
 const GroupItemSkeleton = () => {
-    return <div className="skeletonBox resource-skeleton" >
+    return <div className="skeletonBox group-skeleton" >
         <div className="skeletonBox image-skeleton"></div>
         <div className="container-skeleton">
             <div className="section-skeleton" >

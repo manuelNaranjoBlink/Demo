@@ -5,7 +5,7 @@ export default function ResourceItem({ resource }) {
     return (
         <div className={'resource'}>
             <div>
-                <Image src={'/resources/img/' + resource.thumb} alt="resource image" width={120} height={182} />
+                <Image src={'/resources/img/' + resource.thumb} alt="resource image" width={120} height={181} />
             </div>
             <div className='info-container'>
                 <h3 className="title">{resource.name}</h3>

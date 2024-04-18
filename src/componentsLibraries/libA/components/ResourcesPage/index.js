@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import ViewResourcesSectionSkeleton from './components/ViewResources/components/Skeleton';
+import ViewResourcesSectionSkeleton from './components/Skeleton';
 import ViewResourcesSection from './components/ViewResources';
 
 export default async function MainPage() {

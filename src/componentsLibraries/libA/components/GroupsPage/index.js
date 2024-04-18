@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import ViewGroupsSection from './components/Groups';
-import ViewGroupsSectionSkeleton from './components/Groups/components/Skeleton';
+import ViewGroupsSectionSkeleton from './components/Skeleton';
 
 export default function GroupsPage() {
 

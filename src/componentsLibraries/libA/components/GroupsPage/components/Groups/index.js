@@ -1,11 +1,6 @@
-import ViewGroups from "./components/ViewGroups"
+import ViewGroups from "../ViewGroups"
 
 const RESPONSE = {
-    "apiVersion": "1.0",
-    "method": "Group.myGroups",
-    "context": "/api/v/1/my/groups",
-    "params": null,
-    "updated": 1713335746,
     "data": {
         "(DEMO)2": {
             "name": "(DEMO)",

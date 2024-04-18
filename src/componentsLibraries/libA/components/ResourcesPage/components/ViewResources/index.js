@@ -1,4 +1,4 @@
-import ViewResources from "./components/ViewResources"
+import ViewResources from "../ResourceItem"
 
 const RESPONSE = {
     "data": {

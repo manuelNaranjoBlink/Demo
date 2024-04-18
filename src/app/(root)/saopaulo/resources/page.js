@@ -2,9 +2,9 @@ import { ComponentsLibrary } from '../domain.config';
 
 export default () => {
 
-  const { ViewResources } = ComponentsLibrary()
+  const { ResourcesPage } = ComponentsLibrary()
 
   return (
-    <ViewResources />
+    <ResourcesPage />
   )
 }

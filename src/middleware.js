@@ -19,15 +19,12 @@ export async function middleware(request) {
             if (urlPath.includes('/login')) {
                 url.searchParams.delete('domain')
                 url.pathname = `/resources`
-                console.log("HERE 1", url.pathname)
                 return NextResponse.redirect(url)
             } else if (urlPath == '/') {
                 url.pathname = `/resources`
-                console.log("HERE 2", url.pathname)
                 return NextResponse.redirect(url)
             } else {
                 url.pathname = `/${domain}${urlPath}`
-                console.log("HERE 3", url.pathname)
                 return NextResponse.rewrite(url)
             }
         }

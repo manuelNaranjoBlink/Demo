@@ -9,7 +9,7 @@ export default async function LoginPage() {
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <div className='h-100'>
-                <div >
+                <div className="img-fondo-container" >
                     <Image
                         alt='Blink'
                         src={'/_next/image?url=%2Fgroups%2Fimg%2Ffondo.jpg&w=256&q=75'}

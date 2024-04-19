@@ -1,7 +1,7 @@
 import { useRouter } from 'next/navigation';
 import React from "react";
 
-export default function Button({ item, className, onClick, disabled, startIcon }) {
+export default function Button({ item, className, onClick, disabled }) {
 
     const router = useRouter()
 
@@ -21,7 +21,6 @@ export default function Button({ item, className, onClick, disabled, startIcon }
             disabled={disabled}
             onClick={handleClick}
         >
-            {/* {startIcon} */}
             {item.text}
         </button>
     )

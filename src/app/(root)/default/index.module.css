@@ -4,7 +4,6 @@
     flex-direction: column;
     gap: 16px;
     padding: 32px;
-    /* border: 1px solid beige; */
     border-radius: 10px;
     margin: 64px 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -32,7 +31,6 @@
 .buttonLink {
     composes: button;
     margin: 0;
-    /* position: absolute; */
     left: 0;
     color: blue;
     align-content: center;

@@ -3,7 +3,7 @@ html,body, main, .main{
     width: 100%;
     margin: 0;
 }
-h1{
+.h1{
     color: white;
     font-size: 38px;
     line-height: 3rem;
@@ -40,14 +40,14 @@ h1{
 
 
 .div-input 
-    label {
+    .label {
     text-transform: capitalize;    
     font-size: 16px;
        padding-bottom: 2px;
        color: #edecec
     
 }
-.div-input  input {
+.div-input .input {
     width: 95%;
     height: 35px;
     background: transparent;
@@ -56,11 +56,11 @@ h1{
     color: #edecec;    
 
 }
-input::placeholder{
+.input::placeholder{
     color: #edecec;
     text-transform: capitalize;
 }
-h5{
+.h5{
     margin: 0;
     font-size: 12px;
 }
@@ -86,7 +86,7 @@ h5{
 .button-login:hover{
     background: #e6e1e13d;
 }
-h3{
+.h3{
     color:white;
     font-size: 20px;
     font-weight:300;

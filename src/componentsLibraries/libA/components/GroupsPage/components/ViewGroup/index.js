@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function ViewGroups({ groups }) {
+export default function ViewGroup({ groups }) {
 
     return (
         <div className='groups-container'>

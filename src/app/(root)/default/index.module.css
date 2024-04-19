@@ -35,6 +35,8 @@
     /* position: absolute; */
     left: 0;
     color: blue;
+    align-content: center;
+    text-decoration: none;
 }
 
 .appbar {

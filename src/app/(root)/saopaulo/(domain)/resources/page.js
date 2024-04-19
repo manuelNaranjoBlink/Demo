@@ -1,4 +1,4 @@
-import { ComponentsLibrary } from '../domain.config';
+import { ComponentsLibrary } from '../../domain.config';
 
 export default function ResourcesPage() {
 

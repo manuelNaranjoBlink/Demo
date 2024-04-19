@@ -1,4 +1,4 @@
-import ViewGroups from "../ViewGroups"
+import ViewGroup from "../ViewGroup"
 
 const RESPONSE = {
     "data": {
@@ -75,6 +75,6 @@ export default async function ViewGroupsSection() {
     const response = await fetchData()
 
     return (
-        <ViewGroups groups={response.data} />
+        <ViewGroup groups={response.data} />
     )
 }

@@ -1,6 +1,6 @@
 import MainContainer from "@/app/components/MainContainer";
 import { Inter } from "next/font/google";
-import { ComponentsLibrary } from './domain.config';
+import { ComponentsLibrary } from '../domain.config';
 import "./globals.css";
 import '@/themes/themeB/themeB.css';
 

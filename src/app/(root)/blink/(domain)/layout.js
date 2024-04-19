@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { ComponentsLibrary } from './domain.config';
+import { ComponentsLibrary } from '../domain.config';
 import "./globals.css";
 import '@/themes/themeA/themeA.css';
 import MainContainer from "@/app/components/MainContainer";

@@ -28,7 +28,7 @@ export async function middleware(request) {
     }
     if (urlPath.includes('/login')) {
         const LOGIN_DOMAIN = url.searchParams.get('domain')
-        url.pathname = `/default/login/${LOGIN_DOMAIN}`
+        url.pathname = `/${LOGIN_DOMAIN}/login`
         const respponse = NextResponse.rewrite(url)
         respponse.cookies.set('domain', `${LOGIN_DOMAIN}`)
         return respponse

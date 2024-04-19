@@ -12,10 +12,10 @@ export default async function MainPage() {
                 <div >
                     <Image
                         alt='Blink'
-                        src={'/fondo.jpg'}
+                        src={'/img/fondo.jpg'}
                         layout="fill"
                         objectFit="cover"
-                        quality={100}
+                        quality={80}
                         className="img-fondo"
                     />
                 </div>

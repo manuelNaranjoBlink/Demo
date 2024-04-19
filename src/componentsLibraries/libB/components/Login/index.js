@@ -2,7 +2,6 @@ import { Suspense } from 'react';
 import Image from 'next/image';
 import { login } from '@/lib/login';
 import InputLabel from '../InputLabel';
-import './index.css';
 
 export default async function LoginPage() {
 

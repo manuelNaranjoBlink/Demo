@@ -11,7 +11,7 @@ export default async function LoginPage() {
                 <div className="img-fondo-container" >
                     <Image
                         alt='Blink'
-                        src={'/_next/image?url=%2Fgroups%2Fimg%2Ffondo.jpg&w=256&q=75'}
+                        src={'/img/fondo.jpg'}
                         layout="fill"
                         objectFit="cover"
                         quality={80}

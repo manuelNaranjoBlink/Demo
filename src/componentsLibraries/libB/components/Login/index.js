@@ -18,7 +18,7 @@ export default async function LoginPage() {
             <div className='w-h-100 p-absolute'>
               <Image
                 alt='Sao Paulo'
-                src={'/_next/image?url=%2Fimg%2FsaoPaulo.png&w=256&q=75'}
+                src={'/img/saoPaulo.png'}
                 width={300}
                 height={600}
                 quality={100}
@@ -32,7 +32,7 @@ export default async function LoginPage() {
               <div className='img-logo'>
                 <Image
                   alt='Sao Paulo'
-                  src={'/_next/image?url=%2Fimg%2FlogoColor.png&w=256&q=75'}
+                  src={'/img/logoColor.png'}
                   width={300}
                   height={100}
                   quality={100}
